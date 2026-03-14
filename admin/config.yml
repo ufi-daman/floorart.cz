@@ -1,0 +1,125 @@
+# Decap CMS konfigurace — FloorArt.cz
+#
+# LOKÁLNÍ VÝVOJ:
+#   1. Nainstalujte: npm install -g decap-server
+#   2. Spusťte v kořeni projektu: decap-server
+#   3. Otevřete admin/index.html v prohlížeči
+#
+# PRODUKCE (GitHub + Netlify):
+#   - Změňte local_backend na false
+#   - Nastavte správný repo níže
+#   - Přidejte Netlify Identity nebo GitHub OAuth App
+
+local_backend: true
+
+backend:
+  name: github
+  repo: ufi-daman/floorart.cz
+  branch: main
+
+media_folder: img/uploads
+public_folder: /img/uploads
+
+locale: cs
+
+collections:
+
+  # ── PORTFOLIO ─────────────────────────────────────────────────────────────
+  - name: portfolio
+    label: Portfolio
+    files:
+      - name: projects
+        label: Projekty
+        file: content/portfolio.json
+        extension: json
+        format: json
+        fields:
+          - label: Projekty
+            name: projects
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Název projektu, name: title, widget: string }
+              - { label: Popis (typ · město · rok), name: description, widget: string }
+              - { label: Obrázek (URL), name: image, widget: string, hint: "URL obrázku — Unsplash, vlastní server apod." }
+              - { label: Odkaz, name: link, widget: string, default: "#", required: false }
+
+  # ── TVORBA TÝMU ───────────────────────────────────────────────────────────
+  - name: team
+    label: Tým
+    files:
+      - name: members
+        label: Členové týmu
+        file: content/team.json
+        extension: json
+        format: json
+        fields:
+          - label: Členové
+            name: members
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Jméno, name: name, widget: string }
+              - { label: Role / pozice, name: role, widget: string }
+              - { label: Fotka (URL), name: photo, widget: string }
+
+  # ── NASTAVENÍ (kontakt, stránky) ──────────────────────────────────────────
+  - name: settings
+    label: Nastavení
+    files:
+
+      - name: contact
+        label: Kontaktní údaje
+        file: content/contact.json
+        extension: json
+        format: json
+        fields:
+          - { label: Telefon, name: phone, widget: string }
+          - { label: E-mail, name: email, widget: string }
+          - { label: Firma, name: company, widget: string }
+          - { label: Ulice a číslo, name: address, widget: string }
+          - { label: PSČ a město, name: city, widget: string }
+          - { label: Provozní doba, name: hours, widget: text }
+          - { label: IČO, name: ico, widget: string }
+
+      - name: studio
+        label: Studio — texty
+        file: content/studio.json
+        extension: json
+        format: json
+        fields:
+          - { label: "O nás — nadpis", name: about_title, widget: string }
+          - { label: "O nás — odstavec 1", name: about_p1, widget: text }
+          - { label: "O nás — odstavec 2", name: about_p2, widget: text }
+          - { label: "Filosofie — nadpis", name: philosophy_title, widget: string }
+          - { label: "Filosofie — odstavec 1", name: philosophy_p1, widget: text }
+          - { label: "Filosofie — odstavec 2", name: philosophy_p2, widget: text }
+
+      - name: sluzby
+        label: Služby
+        file: content/sluzby.json
+        extension: json
+        format: json
+        fields:
+          - label: Služby
+            name: services
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Název, name: title, widget: string }
+              - { label: Popis, name: description, widget: text }
+
+      - name: jak-pracujeme
+        label: Jak pracujeme
+        file: content/jak-pracujeme.json
+        extension: json
+        format: json
+        fields:
+          - { label: Úvodní text, name: intro, widget: text }
+          - label: Kroky procesu
+            name: steps
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Název kroku, name: title, widget: string }
+              - { label: Popis, name: description, widget: text }

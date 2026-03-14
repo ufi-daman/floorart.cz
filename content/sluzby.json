@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "title": "Dřevěné podlahy",
+      "description": "Pokládka masivních parket, vícevrstvých dílců a dubových vlysů. Pracujeme s prémiovými materiály tuzemských i zahraničních výrobců. Každá dřevěná podlaha je jedinečná — vzorník nabídneme při osobní konzultaci."
+    },
+    {
+      "title": "Epoxidové podlahy",
+      "description": "Bezespárové epoxidové a polyuretanové litiny vhodné do obytných i komerčních prostor. Nabízíme lesklý, matný i metalický povrch v libovolném barevném tónu. Ideální volba pro moderní lofty, wellness a průmyslové interiéry."
+    },
+    {
+      "title": "Betonové stěrky",
+      "description": "Mikrocement a betonové stěrky pro podlahy i stěny. Ultratenko aplikovaný materiál zachovává původní strukturu a výšku podlahy. Výsledkem je minimalistický, průmyslový povrch s hlubokou texturou a jedinečným charakterem."
+    },
+    {
+      "title": "Designové krytin",
+      "description": "Luxusní vinylové (LVT) a SPC podlahy s realistickým dekorem dřeva, kamene nebo betonu. Odolné proti vlhkosti, tichá a příjemná chůze. Vhodné do kuchyní, koupelen i komerčních prostor s vysokým provozem."
+    },
+    {
+      "title": "Renovace a broušení",
+      "description": "Oživení starých dřevěných podlah broušením, napuštěním olejem nebo nátěrem lakem. Opravy prasklin a spár, výměna poškozených prvků. Vrátíme vaší podlaze původní krásu bez nutnosti úplné výměny."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "intro": "Každý projekt je pro nás jiný. Přistupujeme k němu s otevřenou myslí a společně s vámi hledáme řešení, které bude přesně odpovídat vašim požadavkům, životnímu stylu i prostoru.",
+  "steps": [
+    {
+      "title": "Konzultace",
+      "description": "Vše začíná rozhovorem. Chceme porozumět vašim potřebám, přáním a prostoru, do kterého podlahu navrhujeme. Přijedeme za vámi na prohlídku nebo si domluvíme schůzku v ateliéru, kde vám ukážeme vzorky a referenční projekty."
+    },
+    {
+      "title": "Návrh a výběr materiálů",
+      "description": "Na základě konzultace připravíme výběr vhodných materiálů, variant vzorů a povrchových úprav. Zohledňujeme provoz, světelné podmínky, vlhkost i celkovou estetiku interiéru. Dodáme vzorky přímo k vám."
+    },
+    {
+      "title": "Nabídka a smlouva",
+      "description": "Po odsouhlasení materiálů a rozsahu prací připravíme přesnou cenovou nabídku. Pracujeme transparentně — žádné skryté poplatky. Smlouvu uzavíráme písemně s jasně stanovenými termíny a platebními podmínkami."
+    },
+    {
+      "title": "Příprava podkladu",
+      "description": "Kvalitní podlaha začíná kvalitním podkladem. Provedeme broušení, vyrovnání nebo penetraci dle potřeby. Dbáme na správnou vlhkost a teplotu prostředí. Tato fáze je klíčová pro životnost výsledku."
+    },
+    {
+      "title": "Realizace",
+      "description": "Práce provádíme čistě, pečlivě a ve smluveném termínu. Na stavbě udržujeme pořádek a minimalizujeme zásah do vašeho každodenního provozu. Každý detail dokončíme s maximální precizností."
+    },
+    {
+      "title": "Předání a péče",
+      "description": "Po dokončení vás provedeme výsledkem a předáme instrukce k péči o podlahu. Zajistíme záruční i pozáruční servis. Chceme, abyste byli spokojeni dlouhodobě, ne jen v den předání."
+    }
+  ]
+}

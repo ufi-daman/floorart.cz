@@ -29,8 +29,8 @@
       </ul>
     </nav>
     <div class="popup-footer">
-      <a href="tel:+420777000111">+420 777 000 111</a><br>
-      <a href="mailto:info@floorart.cz">info@floorart.cz</a>
+      <a href="tel:+420777000111" data-cms="phone">+420 777 000 111</a><br>
+      <a href="mailto:info@floorart.cz" data-cms="email">info@floorart.cz</a>
     </div>
   </div>
 
@@ -60,13 +60,13 @@
       <div class="section">
 
         <div class="infoblock text about">
-          <h2>O nás</h2>
-          <p>
+          <h2 id="studio-about-title">O nás</h2>
+          <p id="studio-about-p1">
             FloorArt je pražské studio specializující se na pokládku a design prémiových podlah.
             Pracujeme s přesvědčením, že podlaha je základem každého interiéru — dotýkáme se jí
             při každém kroku a její charakter utváří celkový dojem prostoru.
           </p>
-          <p>
+          <p id="studio-about-p2">
             Každý projekt vnímáme jako individuální úkol. Nasloucháme potřebám klientů, pečlivě
             volíme materiály a dbáme na každý detail realizace. Výsledkem je podlaha, která
             vydrží roky a bude se s interiérem harmonicky vyvíjet.
@@ -74,12 +74,12 @@
         </div>
 
         <div class="infoblock text about">
-          <h2>Filosofie</h2>
-          <p>
+          <h2 id="studio-philosophy-title">Filosofie</h2>
+          <p id="studio-philosophy-p1">
             Nevyrábíme krásu pro první dojem — vytváříme povrchy, které obstojí v čase.
             Materiálově, funkčně i esteticky. Naše práce nevykřičí, ale vydrží.
           </p>
-          <p>
+          <p id="studio-philosophy-p2">
             Věříme, že nejlepší podlaha je ta, která splyne s prostorem tak přirozeně,
             že si ji nezačnete uvědomovat — jen se v daném místě budete cítit dobře.
           </p>
@@ -93,7 +93,7 @@
           <h2>Tým</h2>
         </div>
 
-        <div class="team-grid" style="max-width: 800px; margin: 0 auto;">
+        <div class="team-grid" id="team-grid" style="max-width: 800px; margin: 0 auto;">
 
           <div class="team-member">
             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80"
@@ -125,5 +125,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/cms.js"></script>
 </body>
 </html>

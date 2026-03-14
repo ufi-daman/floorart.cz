@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "title": "Rezidence Holešovice",
+      "description": "Epoxidová podlaha · Praha 2024",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Vila Průhonice",
+      "description": "Masivní dub · Praha 2023",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Loft Smíchov",
+      "description": "Betonová stěrka · Praha 2023",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Wellness Brno",
+      "description": "Přírodní kámen · Brno 2024",
+      "image": "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Kancelář Vinohrady",
+      "description": "Vinylová podlaha · Praha 2024",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Restaurace Dejvice",
+      "description": "Teraco · Praha 2023",
+      "image": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Byt Žižkov",
+      "description": "Velkoformátová dlažba · Praha 2024",
+      "image": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Vila Černošice",
+      "description": "Rybí kost · Středočeský kraj 2024",
+      "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+      "link": "#"
+    },
+    {
+      "title": "Klinika Chodov",
+      "description": "Hygienická epoxidová podlaha · Praha 2023",
+      "image": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+      "link": "#"
+    }
+  ]
+}
