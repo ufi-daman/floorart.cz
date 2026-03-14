@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt — FloorArt</title>
+  <meta name="description" content="Kontaktujte FloorArt — nezávazná konzultace, cenová nabídka. Praha a okolí.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page page-kontakt">
+
+  <!-- ============ POPUP MENU ============ -->
+  <div class="popupmenu" id="popupmenu">
+    <div class="popup-logo">
+      <a href="index.html"><img src="img/logo.svg" alt="FloorArt" height="32"></a>
+    </div>
+    <div id="popupClose" class="popup-close" aria-label="Zavřít menu">
+      <span></span><span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="sluzby.html">Služby</a></li>
+        <li><a href="jak-pracujeme.html">Jak pracujeme</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="popup-footer">
+      <a href="tel:+420777000111">+420 777 000 111</a><br>
+      <a href="mailto:info@floorart.cz">info@floorart.cz</a>
+    </div>
+  </div>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="page-header">
+    <div class="logoblock">
+      <a href="index.html"><img src="img/logo.svg" alt="FloorArt"></a>
+    </div>
+    <div class="header-right">
+      <div class="lang-switcher"><a href="kontakt-en.html">EN</a></div>
+      <div class="burger" id="burger" role="button" tabindex="0" aria-label="Otevřít menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ CONTENT (no hero on contact page — same as bekarch) ============ -->
+  <main>
+    <div class="container">
+      <div class="section" style="padding-top: 100px;">
+
+        <p class="kontakth">Kontakt</p>
+
+        <div class="contact-grid">
+
+          <!-- Contact info -->
+          <div class="contact-info">
+
+            <h3>Telefon</h3>
+            <a href="tel:+420777000111">+420 777 000 111</a>
+
+            <h3>E-mail</h3>
+            <a href="mailto:info@floorart.cz">info@floorart.cz</a>
+
+            <h3>Adresa</h3>
+            <p>
+              FloorArt s.r.o.<br>
+              Vinohradská 28<br>
+              120 00 Praha 2
+            </p>
+
+            <h3>Provozní doba</h3>
+            <p>
+              Po–Pá: 8:00–17:00<br>
+              Realizace i o víkendech
+            </p>
+
+            <h3>IČO</h3>
+            <p>12345678</p>
+
+          </div>
+
+          <!-- Contact form -->
+          <div>
+            <form id="contactForm" class="contact-form" novalidate>
+
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Jméno a příjmení *" required>
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" placeholder="E-mail *" required>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Telefon">
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="subject" placeholder="Předmět">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" placeholder="Zpráva *" required></textarea>
+              </div>
+
+              <button type="submit">Odeslat</button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <span>&copy; 2024 FloorArt s.r.o.</span>
+    <a href="index.html">
+      <img src="img/logo.svg" alt="FloorArt" style="height:20px; opacity:0.4;">
+    </a>
+    <span>
+      <a href="studio.html">Studio</a>
+    </span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
