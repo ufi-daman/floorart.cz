@@ -75,8 +75,9 @@
 
     fetchJSON('/content/portfolio.json', function (data) {
       grid.innerHTML = data.projects.map(function (p) {
+        var href = p.slug ? 'projekt.html?id=' + encodeURIComponent(p.slug) : (p.link || '#');
         return (
-          '<a href="' + esc(p.link || '#') + '" class="portfolio-item">' +
+          '<a href="' + esc(href) + '" class="portfolio-item">' +
           '<img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy">' +
           '<div class="portfolio-item-overlay"><div class="portfolio-item-info">' +
           '<h3>' + esc(p.title) + '</h3>' +
@@ -84,6 +85,52 @@
           '</div></div></a>'
         );
       }).join('');
+    });
+  }
+
+  // ── Projekt detail ───────────────────────────────────────────────────────
+  function loadProjekt() {
+    if (!body.classList.contains('page-projekt')) return;
+
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get('id');
+
+    fetchJSON('/content/portfolio.json', function (data) {
+      var project = data.projects.filter(function (p) { return p.slug === slug; })[0];
+
+      if (!project) {
+        document.getElementById('projekt-title').textContent = 'Projekt nenalezen';
+        return;
+      }
+
+      // <title> a meta description
+      document.getElementById('page-title').textContent = project.title + ' — FloorArt';
+      document.getElementById('page-desc').setAttribute('content', project.description + '. ' + (project.detail || ''));
+
+      // Hero
+      var hero = document.getElementById('projekt-hero');
+      if (hero) hero.style.backgroundImage = 'url(' + project.image + ')';
+      document.getElementById('projekt-title').textContent = project.title;
+
+      // Metadata
+      var type = document.getElementById('projekt-type');
+      var loc  = document.getElementById('projekt-location');
+      var year = document.getElementById('projekt-year');
+      if (type) type.textContent = project.type || '';
+      if (loc)  loc.textContent  = project.location || '';
+      if (year) year.textContent = project.year || '';
+
+      // Detail text
+      var detail = document.getElementById('projekt-detail-text');
+      if (detail) detail.textContent = project.detail || '';
+
+      // Galerie
+      var gallery = document.getElementById('projekt-gallery');
+      if (gallery && project.gallery && project.gallery.length) {
+        gallery.innerHTML = project.gallery.map(function (src, i) {
+          return '<img src="' + esc(src) + '" alt="' + esc(project.title) + ' — foto ' + (i + 1) + '" loading="lazy">';
+        }).join('');
+      }
     });
   }
 
@@ -164,6 +211,7 @@
   // ── Init ────────────────────────────────────────────────────────────────
   loadContact();
   loadPortfolio();
+  loadProjekt();
   loadStudio();
   loadSluzby();
   loadJakPracujeme();

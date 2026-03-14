@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="page-title">Projekt — FloorArt</title>
+  <meta name="description" id="page-desc" content="Detail projektu FloorArt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page page-projekt">
+
+  <!-- ============ POPUP MENU ============ -->
+  <div class="popupmenu" id="popupmenu">
+    <div class="popup-logo">
+      <a href="index.html"><img src="img/logo.svg" alt="FloorArt" height="32"></a>
+    </div>
+    <div id="popupClose" class="popup-close" aria-label="Zavřít menu">
+      <span></span><span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="sluzby.html">Služby</a></li>
+        <li><a href="jak-pracujeme.html">Jak pracujeme</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="popup-footer">
+      <a href="tel:+420777000111" data-cms="phone">+420 777 000 111</a><br>
+      <a href="mailto:info@floorart.cz" data-cms="email">info@floorart.cz</a>
+    </div>
+  </div>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="page-header">
+    <div class="logoblock">
+      <a href="index.html"><img src="img/logo.svg" alt="FloorArt"></a>
+    </div>
+    <div class="header-right">
+      <div class="burger" id="burger" role="button" tabindex="0" aria-label="Otevřít menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO IMAGE ============ -->
+  <div class="head-image-block projekt-hero" id="projekt-hero">
+    <h1 id="projekt-title">Načítám&hellip;</h1>
+  </div>
+
+  <!-- ============ CONTENT ============ -->
+  <main>
+    <div class="container">
+      <div class="section projekt-section">
+
+        <!-- Breadcrumb / zpět -->
+        <div class="projekt-back">
+          <a href="portfolio.html">&larr; Zpět na portfolio</a>
+        </div>
+
+        <!-- Metadata -->
+        <div class="projekt-meta" id="projekt-meta">
+          <span id="projekt-type"></span>
+          <span id="projekt-location"></span>
+          <span id="projekt-year"></span>
+        </div>
+
+        <!-- Popis -->
+        <div class="projekt-detail">
+          <p id="projekt-detail-text"></p>
+        </div>
+
+        <!-- Galerie -->
+        <div class="projekt-gallery" id="projekt-gallery"></div>
+
+        <!-- CTA -->
+        <div class="projekt-cta">
+          <a href="kontakt.html" class="btn">Mám zájem o podobný projekt</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <span>&copy; 2024 FloorArt s.r.o.</span>
+    <a href="index.html">
+      <img src="img/logo.svg" alt="FloorArt" style="height:20px; opacity:0.4;">
+    </a>
+    <span><a href="portfolio.html">Portfolio</a></span>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cms.js"></script>
+</body>
+</html>

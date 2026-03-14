@@ -40,9 +40,18 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - { label: Název projektu, name: title, widget: string }
-              - { label: Popis (typ · město · rok), name: description, widget: string }
-              - { label: Obrázek (URL), name: image, widget: string, hint: "URL obrázku — Unsplash, vlastní server apod." }
-              - { label: Odkaz, name: link, widget: string, default: "#", required: false }
+              - { label: Slug (URL identifikátor), name: slug, widget: string, hint: "Pouze malá písmena, číslice a pomlčky — např. rezidence-holesovice" }
+              - { label: Krátký popis (typ · město · rok), name: description, widget: string }
+              - { label: Typ podlahy, name: type, widget: string }
+              - { label: Město / lokalita, name: location, widget: string }
+              - { label: Rok realizace, name: year, widget: string }
+              - { label: Hlavní obrázek (URL), name: image, widget: string, hint: "URL titulního obrázku" }
+              - { label: Detailní popis, name: detail, widget: text, required: false }
+              - label: Galerie (URL obrázků)
+                name: gallery
+                widget: list
+                hint: "Každý řádek = jedno URL obrázku"
+                required: false
 
   # ── TVORBA TÝMU ───────────────────────────────────────────────────────────
   - name: team

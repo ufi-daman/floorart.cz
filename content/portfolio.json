@@ -1,58 +1,139 @@
 {
   "projects": [
     {
+      "slug": "rezidence-holesovice",
       "title": "Rezidence Holešovice",
       "description": "Epoxidová podlaha · Praha 2024",
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-      "link": "#"
+      "type": "Epoxidová podlaha",
+      "location": "Praha",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
+      "detail": "Realizace lité epoxidové podlahy v nadstandardním bytě na Praze 7. Klient požadoval čistý, bezespárový povrch v odstínu světlého betonu, který by vizuálně propojil otevřený obývací prostor s kuchyní. Podklad byl vyrovnán samonivelační stěrkou, poté aplikovány dva základní nátěry a finální průhledný polyuretanový lak s matným povrchem. Celková plocha 95 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80"
+      ]
     },
     {
+      "slug": "vila-pruhonice",
       "title": "Vila Průhonice",
       "description": "Masivní dub · Praha 2023",
-      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-      "link": "#"
+      "type": "Masivní dub",
+      "location": "Praha",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80",
+      "detail": "Pokládka masivních dubových parket ve vzoru rybí kost v rodinné vile v Průhonicích. Podlaha byla broušena na místě a ošetřena olejem s tvrdým voskem pro přirozený, teplý vzhled. Výsledek ladí s historickým charakterem domu i moderními doplňky interiéru. Plocha 140 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
+        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&q=80"
+      ]
     },
     {
+      "slug": "loft-smichov",
       "title": "Loft Smíchov",
       "description": "Betonová stěrka · Praha 2023",
-      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
-      "link": "#"
+      "type": "Betonová stěrka",
+      "location": "Praha",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80",
+      "detail": "Mikrocement na podlaze i stěnách v loftovém bytě na Smíchově. Propojení podlahové a stěnové stěrky vytváří homogenní, industriální atmosféru bez viditelných přechodů. Aplikace probíhala ve třech vrstvách, finální povrch ošetřen hydrofobním voskem. Plocha podlahy 75 m², stěny 40 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&q=80"
+      ]
     },
     {
+      "slug": "wellness-brno",
       "title": "Wellness Brno",
       "description": "Přírodní kámen · Brno 2024",
-      "image": "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&q=80",
-      "link": "#"
+      "type": "Přírodní kámen",
+      "location": "Brno",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=1920&q=80",
+      "detail": "Velkoformátové desky z travertinu v privátním wellness centru v Brně. Povrch byl protiprokluzově upraven jemnou broušenou texturou pro bezpečnost v mokrém prostředí. Vyhřívání podlahy instalováno pod kamennou deskou. Vnitřní část wellness, bazénový ochoz a suchá sauna — celkem 180 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=1200&q=80",
+        "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+      ]
     },
     {
+      "slug": "kancelar-vinohrady",
       "title": "Kancelář Vinohrady",
       "description": "Vinylová podlaha · Praha 2024",
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
-      "link": "#"
+      "type": "Vinylová podlaha (LVT)",
+      "location": "Praha",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80",
+      "detail": "Pokládka luxusního vinylu v designu světlého dubu v kancelářských prostorách na Vinohradech. LVT s akustickou podložkou tlumí kročejový hluk a zajišťuje příjemné prostředí pro práci. Rychlá pokládka pomocí plovoucího systému click umožnila zprovoznění prostor bez výrazného výpadku provozu. Plocha 220 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80",
+        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80"
+      ]
     },
     {
+      "slug": "restaurace-dejvice",
       "title": "Restaurace Dejvice",
       "description": "Teraco · Praha 2023",
-      "image": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80",
-      "link": "#"
+      "type": "Teraco (drcený mramor)",
+      "location": "Praha",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1920&q=80",
+      "detail": "Tradiční terrazzová podlaha v italském stylu v nové restauraci v Dejvicích. Kompozice s bílou matricí a drobnými šedými vložkami navazuje na historizující interiér prostoru. Povrch byl vyleštěn do zrcadlového lesku a napuštěn krystalizačním prostředkem pro dlouhodobou odolnost. Plocha 110 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1200&q=80",
+        "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=1200&q=80",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80"
+      ]
     },
     {
+      "slug": "byt-zizkov",
       "title": "Byt Žižkov",
       "description": "Velkoformátová dlažba · Praha 2024",
-      "image": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80",
-      "link": "#"
+      "type": "Velkoformátová dlažba",
+      "location": "Praha",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1920&q=80",
+      "detail": "Pokládka keramické dlažby formátu 120×60 cm v designu šedého betonu v bytě po rekonstrukci. Tenkoložná technologie aplikace zajistila minimální výšku skladby. Bezespárová pokládka (spáry 1,5 mm) zdůrazňuje kontinuitu povrchu. Koupelny, předsíň a obývací prostor — celkem 65 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80"
+      ]
     },
     {
+      "slug": "vila-cernosice",
       "title": "Vila Černošice",
       "description": "Rybí kost · Středočeský kraj 2024",
-      "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
-      "link": "#"
+      "type": "Masivní dub — rybí kost",
+      "location": "Černošice",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80",
+      "detail": "Pokládka masivního dubu ve vzoru Versailles (francouzský čtverec) v rodinné vile v Černošicích. Podlaha prochází celým přízemím domu včetně propojené kuchyně a jídelny. Ošetření přírodním olejem Rubio Monocoat v tónu White 5% pro jemné zesvětlení. Plocha 190 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&q=80"
+      ]
     },
     {
+      "slug": "klinika-chodov",
       "title": "Klinika Chodov",
       "description": "Hygienická epoxidová podlaha · Praha 2023",
-      "image": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
-      "link": "#"
+      "type": "Hygienická epoxidová podlaha",
+      "location": "Praha",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1920&q=80",
+      "detail": "Speciální zdravotnická epoxidová podlaha pro soukromou kliniku v Praze na Chodově. Bezespárový povrch s vysokou chemickou odolností a antibakteriální přísadou splňuje hygienické požadavky zdravotnických provozů. Sokly vytaženy na stěnu do výšky 10 cm pro snadné čištění. Čekárna, chodby a vyšetřovny — 160 m².",
+      "gallery": [
+        "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+        "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=1200&q=80"
+      ]
     }
   ]
 }
