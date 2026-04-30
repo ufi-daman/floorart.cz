@@ -15,19 +15,22 @@
       .replace(/"/g, '&quot;');
   }
 
-  function fetchJSON(url, callback) {
+  function fetchJSON(url, callback, errCallback) {
     fetch(url)
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
       })
       .then(callback)
-      .catch(function () { /* zachováme statický fallback */ });
+      .catch(function (err) {
+        console.warn('CMS fetch failed:', url, err);
+        if (errCallback) errCallback(err);
+      });
   }
 
   // ── Kontaktní údaje (všechny stránky — popup footer) ───────────────────
   function loadContact() {
-    fetchJSON('/content/contact.json', function (c) {
+    fetchJSON('content/contact.json', function (c) {
       var phoneHref = 'tel:' + c.phone.replace(/\s/g, '');
 
       // Popup footer — telefon a e-mail na všech stránkách
@@ -73,7 +76,7 @@
     var grid = document.getElementById('portfolio-grid');
     if (!grid) return;
 
-    fetchJSON('/content/portfolio.json', function (data) {
+    fetchJSON('content/portfolio.json', function (data) {
       grid.innerHTML = data.projects.map(function (p) {
         var href = p.slug ? 'projekt.html?id=' + encodeURIComponent(p.slug) : (p.link || '#');
         return (
@@ -95,11 +98,18 @@
     var params = new URLSearchParams(window.location.search);
     var slug = params.get('id');
 
-    fetchJSON('/content/portfolio.json', function (data) {
+    function showProjektError(msg) {
+      var titleEl = document.getElementById('projekt-title');
+      var detailEl = document.getElementById('projekt-detail-text');
+      if (titleEl) titleEl.textContent = msg;
+      if (detailEl) detailEl.innerHTML = '<a href="portfolio.html">&larr; Zpět na portfolio</a>';
+    }
+
+    fetchJSON('content/portfolio.json', function (data) {
       var project = data.projects.filter(function (p) { return p.slug === slug; })[0];
 
       if (!project) {
-        document.getElementById('projekt-title').textContent = 'Projekt nenalezen';
+        showProjektError('Projekt nenalezen');
         return;
       }
 
@@ -131,6 +141,8 @@
           return '<img src="' + esc(src) + '" alt="' + esc(project.title) + ' — foto ' + (i + 1) + '" loading="lazy">';
         }).join('');
       }
+    }, function () {
+      showProjektError('Nepodařilo se načíst projekt');
     });
   }
 
@@ -138,7 +150,7 @@
   function loadStudio() {
     if (!body.classList.contains('page-studio')) return;
 
-    fetchJSON('/content/studio.json', function (d) {
+    fetchJSON('content/studio.json', function (d) {
       var el;
       if ((el = document.getElementById('studio-about-title')))      el.textContent = d.about_title;
       if ((el = document.getElementById('studio-about-p1')))         el.textContent = d.about_p1;
@@ -148,7 +160,7 @@
       if ((el = document.getElementById('studio-philosophy-p2')))    el.textContent = d.philosophy_p2;
     });
 
-    fetchJSON('/content/team.json', function (data) {
+    fetchJSON('content/team.json', function (data) {
       var grid = document.getElementById('team-grid');
       if (!grid) return;
       grid.innerHTML = data.members.map(function (m) {
@@ -169,7 +181,7 @@
     var list = document.getElementById('service-list');
     if (!list) return;
 
-    fetchJSON('/content/sluzby.json', function (data) {
+    fetchJSON('content/sluzby.json', function (data) {
       list.innerHTML = data.services.map(function (s, i) {
         var num = String(i + 1).padStart(2, '0');
         return (
@@ -188,7 +200,7 @@
   function loadJakPracujeme() {
     if (!body.classList.contains('page-jak-pracujeme')) return;
 
-    fetchJSON('/content/jak-pracujeme.json', function (data) {
+    fetchJSON('content/jak-pracujeme.json', function (data) {
       var intro = document.getElementById('process-intro');
       if (intro) intro.textContent = data.intro;
 
